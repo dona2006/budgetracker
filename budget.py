@@ -101,7 +101,7 @@ def track_budget():
     total_spent = sum(exp['amount'] for exp in expenses)
     print(f"\nTotal spent so far: ₹{total_spent:.2f}")
     if total_spent > monthly_budget:
-        print("⚠️ You have exceeded your budget!")
+        print("You have exceeded your budget!")
     else:
         remaining = monthly_budget - total_spent
         print(f" You have ₹{remaining:.2f} left for the month.")
@@ -129,7 +129,7 @@ def show_menu():
             set_budget()
         elif choice == '6':
             save_expenses()
-            print("👋 Exiting... Goodbye!")
+            print("Exiting... Goodbye!")
             break
         else:
             print(" Invalid choice! Please enter a number between 1 and 6.")
